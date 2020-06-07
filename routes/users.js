@@ -11,7 +11,7 @@ router.post(
   "/",
   [
     check("name", "Please enter a name").not().isEmpty(),
-    check("email", "Please include a valid email"),
+    check("email", "Please include a valid email").isEmail(),
   ],
   (req, res) => {
     res.send(req.body);
