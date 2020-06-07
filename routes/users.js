@@ -18,7 +18,7 @@ router.post(
     ).isLength({ min: 6 }),
   ],
   (req, res) => {
-    res.send(req.body);
+    const errors = validationResults(req);
   }
 );
 
