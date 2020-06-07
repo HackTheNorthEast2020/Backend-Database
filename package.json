@@ -2,7 +2,7 @@
   "name": "Backend-Database",
   "version": "1.0.0",
   "description": "Database for User info",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
