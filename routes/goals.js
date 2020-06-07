@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 });
 
 // @route  POST api/goals
-// @desc Add new goals
+// @desc Add new goal
 // @access Private
 router.post("/", (req, res) => {
   res.send("Get all goals");
