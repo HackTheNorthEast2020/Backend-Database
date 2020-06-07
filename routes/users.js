@@ -7,8 +7,12 @@ const User = require("../models/User");
 // @route  POST api/users
 // @desc Register a user
 // @access Public
-router.post("/", (req, res) => {
-  res.send(req.body);
-});
+router.post(
+  "/",
+  [check("name", "name is required").not().isEmpty()],
+  (req, res) => {
+    res.send(req.body);
+  }
+);
 
 module.exports = router;
