@@ -8,7 +8,7 @@ router.post("/", (req, res) => {
   res.send("Register a user");
 });
 
-// @route  GET api/auth
+// @route  POST api/auth
 // @desc Get logged in user
 // @access Private
 router.post("/", (req, res) => {
