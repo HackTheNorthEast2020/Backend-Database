@@ -9,7 +9,10 @@ const User = require("../models/User");
 // @access Public
 router.post(
   "/",
-  [check("name", "name is required").not().isEmpty()],
+  [
+    check("name", "name is required").not().isEmpty(),
+    check("email", "Please include a valid email"),
+  ],
   (req, res) => {
     res.send(req.body);
   }
