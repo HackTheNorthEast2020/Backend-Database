@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// @route  POST api/goals
+// @route  GET api/goals
 // @desc Get all users goals
 // @access Private
 router.get("/", (req, res) => {
