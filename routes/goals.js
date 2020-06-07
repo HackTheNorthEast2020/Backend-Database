@@ -23,9 +23,9 @@ router.put("/:id", (req, res) => {
 });
 
 // @route  DELETE api/goals/:id
-// @desc Update goal
+// @desc Delete goal
 // @access Private
-router.put("/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   res.send("Update goal");
 });
 
