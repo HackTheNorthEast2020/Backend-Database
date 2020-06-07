@@ -23,7 +23,7 @@ const UserSchema = mongoose.Schema({
     type: String,
   },
   passion: {
-    type: Array,
+    type: String,
   },
   goals: {
     type: String,
