@@ -39,6 +39,8 @@ router.post(
         hobbies,
         passion,
       });
+
+      const salt = await bcrypt.genSalt(10);
     } catch (error) {}
   }
 );
