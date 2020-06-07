@@ -20,13 +20,13 @@ const UserSchema = mongoose.Schema({
     default: Date.now,
   },
   hobbies: {
-    type: Array,
+    type: String,
   },
   passion: {
-    type: Array,
+    type: String,
   },
   goals: {
-    type: Array,
+    type: String,
   },
 });
 
