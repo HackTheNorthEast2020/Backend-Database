@@ -24,14 +24,11 @@ const UserSchema = mongoose.Schema({
   },
   hobbies: {
     type: Array,
-    required: true,
   },
   passion: {
     type: Array,
-    required: true,
   },
   goals: {
     type: Array,
-    required: true,
   },
 });
