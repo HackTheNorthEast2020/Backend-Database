@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
+const config = require("config");
 const bcrypt = require("bcryptjs");
 const { check, validationResult } = require("express-validator");
 
@@ -50,6 +51,8 @@ router.post(
           id: user.id,
         },
       };
+
+      jwt.sign(payload);
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Server Error");
