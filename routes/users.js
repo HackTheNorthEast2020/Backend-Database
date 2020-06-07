@@ -46,7 +46,7 @@ router.post(
       res.send("User saved");
     } catch (error) {
       console.error(error.message);
-      res.status();
+      res.status(500).send("Server Error");
     }
   }
 );
