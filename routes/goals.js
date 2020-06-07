@@ -15,4 +15,11 @@ router.post("/", (req, res) => {
   res.send("Get all goals");
 });
 
+// @route  POST api/goals/:id
+// @desc Update goal
+// @access Private
+router.post("/", (req, res) => {
+  res.send("Get all goals");
+});
+
 module.exports = router;
