@@ -22,4 +22,11 @@ router.put("/:id", (req, res) => {
   res.send("Update goal");
 });
 
+// @route  DELETE api/goals/:id
+// @desc Update goal
+// @access Private
+router.put("/:id", (req, res) => {
+  res.send("Update goal");
+});
+
 module.exports = router;
