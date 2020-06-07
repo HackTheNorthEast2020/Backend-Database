@@ -2,6 +2,8 @@ const express = require("express");
 const connectDB = require("./config/db");
 const app = express();
 
+// Connect Database
+
 app.get("/", (req, res) => res.json({ msg: " Welcome to the DreamR API" }));
 
 // Define Routes
