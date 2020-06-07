@@ -18,7 +18,7 @@ router.post("/", (req, res) => {
 // @route  POST api/goals/:id
 // @desc Update goal
 // @access Private
-router.post("/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   res.send("Update goal");
 });
 
