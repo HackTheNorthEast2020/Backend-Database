@@ -3,7 +3,7 @@ const router = express.Router();
 
 // @route  GET api/auth
 // @desc Get logged in user
-// @access Public
+// @access Private
 router.post("/", (req, res) => {
   res.send("Register a user");
 });
