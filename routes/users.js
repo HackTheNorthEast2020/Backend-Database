@@ -52,7 +52,7 @@ router.post(
         },
       };
 
-      jwt.sign(payload);
+      jwt.sign(payload, config.get("jwtSecret"));
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Server Error");
