@@ -18,8 +18,8 @@ router.post("/", (req, res) => {
 // @route  POST api/goals/:id
 // @desc Update goal
 // @access Private
-router.post("/", (req, res) => {
-  res.send("Get all goals");
+router.post("/:id", (req, res) => {
+  res.send("Update goal");
 });
 
 module.exports = router;
