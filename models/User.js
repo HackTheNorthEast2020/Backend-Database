@@ -18,8 +18,20 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  name: {
-    type: String,
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  hobbies: {
+    type: Array,
+    required: true,
+  },
+  passion: {
+    type: Array,
+    required: true,
+  },
+  goals: {
+    type: Array,
     required: true,
   },
 });
